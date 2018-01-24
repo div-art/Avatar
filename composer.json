@@ -1,0 +1,27 @@
+{
+    "name": "div-art/avatar",
+    "description": "A Laravel 5.5 avatar creator",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.5"
+    },
+    "license": "MIT",
+    "keywords": ["avatar", "div-art", "laravel"],
+    "authors": [
+        {
+            "name": "Div-Art",
+            "email": "info@div-art.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DivArt\\Avatar\\AvatarServiceProvider"
+            ],
+            "aliases": {
+                "Avatar": "DivArt\\Avatar\\Facades\\Avatar"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
