@@ -13,6 +13,11 @@
             "email": "info@div-art.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "DivArt\\ShortLink\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
