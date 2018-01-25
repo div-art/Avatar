@@ -24,7 +24,7 @@ Also in `config/app.php`, add the Facade class to the `aliases` array:
 
 ## Configuration
 
-To publish ShortLink's configuration file, run the following `vendor:publish` command:
+To publish Avatar's configuration file, run the following `vendor:publish` command:
 
 ```
 php artisan vendor:publish --provider="DivArt\Avatar\AvatarServiceProvider"
