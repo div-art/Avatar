@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "DivArt\\ShortLink\\": "src/"
+            "DivArt\\Avatar\\": "src/"
         }
     },
     "extra": {
