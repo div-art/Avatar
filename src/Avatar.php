@@ -298,7 +298,7 @@ class Avatar
         imagettftext($im, $this->fontSize, 0, $x, $y, imagecolorallocate($im, $red, $green, $blue), "fonts/$this->fontFamily.ttf", $this->userInitials);
 
         if ( ! file_exists($this->catalog)) {
-            mkdir($this->catalog, 0775, true, true);
+            mkdir($this->catalog, 0775, true);
         }
 
         $fileName == null ?  $fileName = $this->randomName($this->name) : $fileName = $this->catalog . "/$fileName." . $this->format;
