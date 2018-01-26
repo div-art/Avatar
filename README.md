@@ -40,6 +40,10 @@ This will create a avatar.php in your config directory.
 use DivArt\Avatar\Facades\Avatar;
 ```
 
+## Fonts
+
+Add your fonts to `public/fonts`.
+
 ## Code Examples
 
 ```php

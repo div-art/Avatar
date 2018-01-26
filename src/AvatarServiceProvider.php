@@ -15,6 +15,7 @@ class AvatarServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/config/avatar.php' => config_path('avatar.php'),
+            __DIR__ . '/fonts' => public_path('/fonts'),
         ]);
     }
 
