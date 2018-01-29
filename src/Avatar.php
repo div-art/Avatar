@@ -289,13 +289,13 @@ class Avatar
                 break;
         }
 
-        $bbox = imagettfbbox($this->fontSize, 0, "fonts/$this->fontFamily.ttf", $this->userInitials);
+        $bbox = imagettfbbox($this->fontSize, 0, public_puth("fonts/$this->fontFamily.ttf"), $this->userInitials);
         $bbox[0] = 0;
         $x = ($this->width / 2) - (($bbox[2] - $bbox[0]) / 2);
 
         $y = ($this->height / 2) - (($bbox[7] - $bbox[1]) / 2);
 
-        imagettftext($im, $this->fontSize, 0, $x, $y, imagecolorallocate($im, $red, $green, $blue), "fonts/$this->fontFamily.ttf", $this->userInitials);
+        imagettftext($im, $this->fontSize, 0, $x, $y, imagecolorallocate($im, $red, $green, $blue), public_puth("fonts/$this->fontFamily.ttf"), $this->userInitials);
 
         if ( ! file_exists($this->catalog)) {
             mkdir($this->catalog, 0775, true);
